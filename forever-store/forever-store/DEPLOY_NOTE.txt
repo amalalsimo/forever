@@ -1,0 +1,2 @@
+Coolify Base Directory for this package: /forever living
+Keep ORDER_WEBHOOK_URL configured in Coolify.

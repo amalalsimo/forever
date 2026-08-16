@@ -1,0 +1,187 @@
+.page{
+  background:#fff;
+  color:#191512;
+}
+.inner{
+  width:min(1180px,calc(100% - 34px));
+  margin:0 auto;
+}
+.hero{
+  padding:88px 0 70px;
+  background:
+    radial-gradient(circle at 12% 18%,rgba(255,198,0,.24),transparent 30%),
+    linear-gradient(135deg,#5c3d31 0%,#4e342a 100%);
+  color:#fff;
+}
+.eyebrow{
+  display:inline-block;
+  color:#ffc600;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:1.8px;
+  margin-bottom:12px;
+}
+.hero h1{
+  margin:0 0 14px;
+  max-width:820px;
+  font-size:clamp(38px,6vw,66px);
+  line-height:1.15;
+}
+.hero p{
+  max-width:760px;
+  margin:0;
+  color:#efe6df;
+  font-size:16px;
+  line-height:1.9;
+}
+.section{
+  padding:72px 0;
+}
+.catalogCard{
+  display:grid;
+  grid-template-columns:190px 1fr;
+  gap:34px;
+  align-items:center;
+  border:1px solid #e7ded5;
+  border-radius:24px;
+  padding:38px;
+  background:#fcf8f3;
+  box-shadow:0 20px 60px rgba(64,43,32,.09);
+}
+.catalogIcon{
+  height:190px;
+  border-radius:20px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(145deg,#ffc600,#feb801);
+  color:#1a1714;
+  font-size:72px;
+}
+.catalogCopy>span{
+  display:inline-block;
+  color:#74a547;
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:2px;
+}
+.catalogCopy h2{
+  margin:7px 0 11px;
+  font-size:34px;
+}
+.catalogCopy p{
+  margin:0 0 22px;
+  max-width:720px;
+  color:#716860;
+  line-height:1.85;
+}
+.actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.primary,.secondary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  padding:13px 18px;
+  border-radius:8px;
+  font-weight:900;
+  text-decoration:none;
+}
+.primary{
+  background:#171411;
+  color:#fff;
+}
+.secondary{
+  background:#fff;
+  color:#302720;
+  border:1px solid #ded4ca;
+}
+.qualitySection{
+  background:#f7f3ee;
+}
+.sectionHead{
+  text-align:center;
+  max-width:800px;
+  margin:0 auto 34px;
+}
+.sectionHead>span{
+  color:#74a547;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:1.8px;
+}
+.sectionHead h2{
+  margin:7px 0 11px;
+  font-size:37px;
+}
+.sectionHead p{
+  margin:0;
+  color:#746a62;
+  line-height:1.8;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.certCard{
+  min-height:245px;
+  border:1px solid #e4dbd2;
+  border-radius:18px;
+  background:#fff;
+  padding:25px;
+}
+.mark{
+  min-height:58px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 16px;
+  border-radius:12px;
+  background:#f4efe8;
+  color:#5c3d31;
+  font-weight:1000;
+  font-size:14px;
+  letter-spacing:.8px;
+}
+.certCard h3{
+  margin:18px 0 9px;
+  font-size:18px;
+}
+.certCard p{
+  margin:0;
+  color:#746a62;
+  line-height:1.8;
+  font-size:13px;
+}
+.sources{
+  margin-top:34px;
+  padding-top:24px;
+  border-top:1px solid #ddd2c8;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
+.sources a{
+  color:#5c3d31;
+  font-weight:800;
+  text-decoration:none;
+}
+@media(max-width:850px){
+  .catalogCard{grid-template-columns:1fr}
+  .catalogIcon{height:150px}
+  .grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:580px){
+  .hero{padding:58px 0 50px}
+  .section{padding:50px 0}
+  .catalogCard{padding:20px}
+  .catalogCopy h2{font-size:27px}
+  .grid{grid-template-columns:1fr}
+  .certCard{min-height:0}
+  .primary,.secondary{width:100%}
+}
